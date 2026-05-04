@@ -1,6 +1,6 @@
 "use strict";
 
-const { createCallerValidator } = require("../../security-utils-nodejs/caller-validator");
+const { createCallerValidator } = require("@acegalaxy-co/security-utils/caller-validator");
 
 const validator = createCallerValidator({ extraFields: ["userId"] });
 
