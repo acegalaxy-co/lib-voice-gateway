@@ -1,5 +1,5 @@
 "use strict";
-const x = require("./identity/resolver");
+const { resolveCaller } = require("./identity/resolver");
 const authz = require("./authz/engine");
 const limiter = require("./rate-limit/limiter");
 const audit = require("./audit/logger");
