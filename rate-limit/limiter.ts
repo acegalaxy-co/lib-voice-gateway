@@ -5,7 +5,11 @@ const { createSlidingWindow } = require("@acegalaxy-co/security-utils/rate-limit
 const QPS_WINDOW_MS: number = 60_000;
 const DAY_MS: number = 24 * 60 * 60 * 1000;
 const DEFAULT_QPS: number = Number(process.env.VOICE_GW_QPS_PER_MIN || 30);
-const DEFAULT_DAILY_COST_USD: number = Number(process.env.VOICE_GW_DAILY_COST_USD || 5);
+// Backward compat: accept both env names. VOICE_STT_DAILY_USD_CAP is consumer-facing
+// (documented in .env templates); VOICE_GW_DAILY_COST_USD is gateway-internal legacy.
+const DEFAULT_DAILY_COST_USD: number = Number(
+  process.env.VOICE_STT_DAILY_USD_CAP || process.env.VOICE_GW_DAILY_COST_USD || 5
+);
 
 interface CostEntry {
   dayStart: number;
