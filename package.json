@@ -43,6 +43,18 @@
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
+    },
+    "./sources/telegram": {
+      "types": "./dist/sources/telegram.d.ts",
+      "default": "./dist/sources/telegram.js"
+    },
+    "./sources/*": {
+      "types": "./dist/sources/*.d.ts",
+      "default": "./dist/sources/*.js"
+    },
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "default": "./dist/*.js"
     }
   },
   "files": [
