@@ -1,7 +1,7 @@
 {
-  "name": "@acegalaxy-co/voice-gateway",
+  "name": "@acegalaxy/voice-gateway",
   "version": "0.1.0",
-  "description": "Multi-source speech-to-text gateway with default-deny authz, rate limit, cost cap, queue, and audit log. Mirrors db-gateway pattern.",
+  "description": "OpenAI Whisper wrapper with cost cap, rate limit, default-deny authz, queue, and audit log. Production-ready STT for Telegram bots.",
   "main": "index.ts",
   "scripts": {
     "test": "node smoke.test.js"
@@ -10,23 +10,28 @@
     "voice",
     "stt",
     "whisper",
+    "openai",
     "telegram",
-    "gateway",
-    "ace-commons"
+    "cost-cap",
+    "rate-limit"
   ],
-  "author": "acegalaxy.co",
-  "license": "UNLICENSED",
+  "author": "ACE Galaxy <hello@acegalaxy.co>",
+  "license": "MIT",
   "private": false,
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/acegalaxy-co/ace_commons-voice-gateway-nodejs.git"
   },
+  "bugs": {
+    "url": "https://github.com/acegalaxy-co/ace_commons-voice-gateway-nodejs/issues"
+  },
+  "homepage": "https://github.com/acegalaxy-co/ace_commons-voice-gateway-nodejs#readme",
   "dependencies": {
     "@acegalaxy-co/security-utils": "file:../ace_commons-security-utils-nodejs"
   }
