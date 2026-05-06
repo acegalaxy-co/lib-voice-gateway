@@ -4,10 +4,11 @@
   "description": "OpenAI Whisper wrapper with cost cap, rate limit, default-deny authz, queue, and audit log. Production-ready STT for Telegram bots.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "node smoke.test.js",
+    "test": "node --test test/*.test.js",
     "build": "tsc",
     "prepublishOnly": "npm run build",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "pretest": "npm run build"
   },
   "keywords": [
     "voice",
