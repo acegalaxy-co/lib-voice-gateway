@@ -1,4 +1,4 @@
-# @kanelr/voice-gateway
+# @acegalaxy/voice-gateway
 
 > **NPM commons library** — Multi-source speech-to-text gateway with default-deny authz, rate limit, cost cap, queue, and audit log. Mirrors db-gateway pattern.
 > Cross-cutting rules: see framework `../../rules/00-index.md`.

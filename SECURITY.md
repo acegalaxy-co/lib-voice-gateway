@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in `@kanelr/voice-gateway`, please
+If you discover a security vulnerability in `@acegalaxy/voice-gateway`, please
 report it privately to <security@acegalaxy.co>.
 
 **Do not** open a public GitHub issue for security vulnerabilities.
