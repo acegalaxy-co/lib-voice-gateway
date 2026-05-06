@@ -2,9 +2,12 @@
   "name": "@acegalaxy/voice-gateway",
   "version": "0.1.0",
   "description": "OpenAI Whisper wrapper with cost cap, rate limit, default-deny authz, queue, and audit log. Production-ready STT for Telegram bots.",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "node smoke.test.js"
+    "test": "node smoke.test.js",
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist"
   },
   "keywords": [
     "voice",
@@ -33,6 +36,24 @@
   },
   "homepage": "https://github.com/acegalaxy-co/ace_commons-voice-gateway-nodejs#readme",
   "dependencies": {
-    "@acegalaxy-co/security-utils": "file:../ace_commons-security-utils-nodejs"
+    "@acegalaxy/security-utils": "file:../ace_commons-security-utils-nodejs"
+  },
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "SECURITY.md"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^20.0.0"
   }
 }

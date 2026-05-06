@@ -44,7 +44,7 @@ class WhisperAdapter extends IVoiceAdapter {
     if (!Buffer.isBuffer(buffer)) throw new Error("whisper: buffer required");
     const apiKey: string = this._getApiKey();
     const form: FormData = new FormData();
-    const blob: Blob = new Blob([buffer], { type: opts.mimeType || "audio/ogg" });
+    const blob: Blob = new Blob([buffer as any], { type: opts.mimeType || "audio/ogg" });
     form.append("file", blob, opts.filename || "voice.ogg");
     form.append("model", this.model);
     if (opts.language && opts.language !== "auto") form.append("language", opts.language);

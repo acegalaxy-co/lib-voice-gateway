@@ -2,7 +2,7 @@
 
 import path = require("path");
 // @ts-expect-error — TS migration: type unverified, fix when polishing
-import { createAuditLogger } from "@acegalaxy-co/security-utils/audit-log";
+import { createAuditLogger } from "@acegalaxy/security-utils/audit-log";
 
 const logger: ReturnType<typeof createAuditLogger> = createAuditLogger({
   logPath: path.join(__dirname, "audit.log"),
