@@ -1,12 +1,12 @@
-// transcribe-telegram-voice — minimal example for @acegalaxy/voice-gateway
+// transcribe-telegram-voice — minimal example for @kanelr/voice-gateway
 //
 // Setup:
 //   npm install
 //   npm run build
 //   node examples/transcribe-telegram-voice.js
 
-const { transcribe } = require("@acegalaxy/voice-gateway");
-const { pickAudioSource } = require("@acegalaxy/voice-gateway/sources/telegram");
+const { transcribe } = require("@kanelr/voice-gateway");
+const { pickAudioSource } = require("@kanelr/voice-gateway/sources/telegram");
 
 // In your Telegram message handler:
 async function onVoiceMessage(msg, botToken) {

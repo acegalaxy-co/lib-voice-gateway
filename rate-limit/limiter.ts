@@ -1,6 +1,6 @@
 "use strict";
 
-const { createSlidingWindow } = require("@acegalaxy/security-utils/rate-limit");
+const { createSlidingWindow } = require("@kanelr/security-utils/rate-limit");
 
 const QPS_WINDOW_MS: number = 60_000;
 const DAY_MS: number = 24 * 60 * 60 * 1000;
