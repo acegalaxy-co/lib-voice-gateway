@@ -19,7 +19,7 @@ research — code/pricing/library ecosystem có thể đổi sau.
   repo cũ, thay bằng `@acegalaxy/lib-security-utils/audit-log` — xem dưới),
   `adapters/whisper.ts`, `sources/telegram.ts`, `queue/in-memory.ts`.
 - Consumer duy nhất trong Nexus:
-  `/Users/admin/Data/Local/Working/projects_repos/imba/ace_ace_nexus-one_nodejs/src/app/llm/voice-stt.ts`
+  `Nexus: src/app/llm/voice-stt.ts`
   — thin wrapper require `@acegalaxy/voice-gateway` (tên cũ, chưa cập nhật
   sang `lib-voice-gateway` tại thời điểm research), bind `VOICE_GW_*` env
   sang naming `NEXUS_*`, gate `VOICE_STT_ENABLED` opt-in mặc định tắt.
@@ -27,7 +27,7 @@ research — code/pricing/library ecosystem có thể đổi sau.
   bump theo rename (nằm trong sweep consumer riêng, ngoài scope RESEARCH.md
   này).
 - Sibling lib đã tách trước: `lib-security-utils` (README tại
-  `/Users/admin/Data/Local/Working/projects_repos/github/lib-security-utils/README.md`)
+  `lib-security-utils/README.md`)
   — cung cấp `createAuditLogger`, `createCallerValidator`,
   `createSlidingWindow`, `createReplayGuard` dùng chung cho mọi gateway họ
   ACE Galaxy (voice-gateway, db-gateway, ott-gateway).
