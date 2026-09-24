@@ -1,11 +1,8 @@
-# @acegalaxy/voice-gateway
+# @acegalaxy/lib-voice-gateway
 
 > **OpenAI Whisper wrapper với cost cap + rate limit + audit — production-ready STT cho Telegram bots.**
 
 Multi-source speech-to-text gateway với 5-layer security (caller identity, default-deny authz, rate limit, daily cost cap, bounded queue, append-only audit log). Built for Telegram voice/audio/video_note messages but works with any audio file path.
-
-[![npm](https://img.shields.io/npm/v/@acegalaxy/voice-gateway.svg)](https://www.npmjs.com/package/@acegalaxy/voice-gateway)
-[![license](https://img.shields.io/npm/l/@acegalaxy/voice-gateway.svg)](LICENSE)
 
 ## Why
 
@@ -22,18 +19,22 @@ Calling Whisper directly from a Telegram bot is one runaway loop away from a $20
 
 ## Install
 
-```bash
-npm install @acegalaxy/voice-gateway
+```json
+"dependencies": {
+  "@acegalaxy/lib-voice-gateway": "github:acegalaxy-co/lib-voice-gateway#v0.2.0"
+}
 ```
 
 Requires Node `>=20`.
+
+This package's git-dependency on `@acegalaxy/lib-security-utils` means CI needs the org secret `LIB_DEPS_TOKEN` (read-only fine-grained PAT) to resolve it.
 
 ## Quick start — Telegram bot voice message
 
 ```js
 const TelegramBot = require('node-telegram-bot-api');
-const voiceGw = require('@acegalaxy/voice-gateway');
-const { pickAudioSource } = require('@acegalaxy/voice-gateway/sources/telegram');
+const voiceGw = require('@acegalaxy/lib-voice-gateway');
+const { pickAudioSource } = require('@acegalaxy/lib-voice-gateway/sources/telegram');
 
 const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, { polling: true });
 
@@ -97,7 +98,7 @@ voiceGw.queueStats(); // { active, pending, maxConcurrent, maxQueued }
 | `telegram` | `botToken`, `fileId`, `mimeType`, `durationSec`, `isVoice` |
 | `file`     | `path` (local audio file)                                  |
 
-Telegram helper: `require('@acegalaxy/voice-gateway/sources/telegram').pickAudioSource(msg)` extracts voice / audio / video_note from any Telegram update.
+Telegram helper: `require('@acegalaxy/lib-voice-gateway/sources/telegram').pickAudioSource(msg)` extracts voice / audio / video_note from any Telegram update.
 
 ## Providers
 
@@ -154,5 +155,5 @@ Must be empty.
 
 ## Related
 
-- [@acegalaxy/db-gateway](https://github.com/acegalaxy-co/ace_commons-db-gateway-nodejs) — same pattern for databases
-- [@acegalaxy/ott-gateway](https://github.com/acegalaxy-co/ace_commons-ott-gateway-nodejs) — same pattern for messaging
+- [@acegalaxy/lib-db-gateway](https://github.com/acegalaxy-co/lib-db-gateway) — same pattern for databases
+- [@acegalaxy/lib-ott-gateway](https://github.com/acegalaxy-co/lib-ott-gateway) — same pattern for messaging

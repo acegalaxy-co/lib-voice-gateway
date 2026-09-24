@@ -12,8 +12,8 @@ Thanks for your interest! This package is part of the [ace_commons](https://gith
 ## Dev setup
 
 ```bash
-git clone https://github.com/acegalaxy-co/ace_commons-voice-gateway-nodejs.git
-cd ace_commons-voice-gateway-nodejs
+git clone https://github.com/acegalaxy-co/lib-voice-gateway.git
+cd lib-voice-gateway
 npm install
 npm test
 ```
@@ -28,7 +28,7 @@ npm test
 
 ## Reporting bugs / requesting features
 
-Open an issue at <https://github.com/acegalaxy-co/ace_commons-voice-gateway-nodejs/issues>.
+Open an issue at <https://github.com/acegalaxy-co/lib-voice-gateway/issues>.
 
 ## Code of Conduct
 

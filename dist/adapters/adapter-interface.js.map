@@ -1,0 +1,1 @@
+{"version":3,"file":"adapter-interface.js","sourceRoot":"","sources":["../../adapters/adapter-interface.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;AAkBb,MAAe,aAAa;IAC1B,4CAA4C;IAC5C,IAAI,QAAQ;QACV,MAAM,IAAI,KAAK,CAAC,oBAAoB,CAAC,CAAC;IACxC,CAAC;CASF;AAED,iBAAS,EAAE,aAAa,EAAE,CAAC"}
