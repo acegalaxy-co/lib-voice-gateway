@@ -3,6 +3,10 @@
   "harnessVersion": "1",
   "syncFiles": [
     {
+      "path": ".claude/agents/browser-uipreview.md",
+      "sha256": "8da6f7277ff2effdf5849e623ec2a14414f608a973a39bf5d96c935b32ddc605"
+    },
+    {
       "path": ".claude/agents/code-reviewer.md",
       "sha256": "38db544015763dec1bd9a2452202b6dd11dcc9745c2ec7ac12091e683bcfce6a"
     },
@@ -27,6 +31,10 @@
       "sha256": "ba2543e600d73eb011804c5447e2c26c3b673e117c710284117d1a226b0f9b67"
     },
     {
+      "path": ".claude/hooks/browser-profile-audit.sh",
+      "sha256": "e11ad5b1354de02072f30102c91c1f509f7a0e38e419a4d1227a4be4e279de66"
+    },
+    {
       "path": ".claude/hooks/post-bash-stuck-detector.sh",
       "sha256": "5d8fc915553032fd063d64e18dc5049dc3f90cb885ee44a32b327c072bbde1d2"
     },
@@ -36,7 +44,7 @@
     },
     {
       "path": ".claude/hooks/pre-bash-gate.sh",
-      "sha256": "16dfdaa1cfbaedd7068e3fb76b6348aa437224d59cf02b62410dcbe991505db7"
+      "sha256": "3440b5c53a1cea570ced76a1f659b4f597ea546ead6fcd9616c0e9d8c5465b04"
     },
     {
       "path": ".claude/hooks/pre-browser-profile-gate.sh",
@@ -52,7 +60,7 @@
     },
     {
       "path": ".claude/hooks/pre-edit-orchestrator-gate.sh",
-      "sha256": "7334504369e25d1dc51982d67dbac9773f70dd7e2f6ef6a677934a576452a07f"
+      "sha256": "ce7ac2a7355623e7317e49cc8d77ec696c0ee7ef7c913e668b578948d05130a8"
     },
     {
       "path": ".claude/hooks/pre-task-dispatch-gate.sh",
@@ -60,7 +68,7 @@
     },
     {
       "path": ".claude/hooks/session-start.sh",
-      "sha256": "2e8477e74f8f49157351818df70354926f7e41b60b6900cc5bc5b57ec8b17be9"
+      "sha256": "5a64e650a82b0a03d766e72fbbf447b4a4fbb982e9880d59bcfa0cafd00691f8"
     },
     {
       "path": ".claude/hooks/subagent-stop-record.sh",
@@ -92,7 +100,7 @@
     },
     {
       "path": ".claude/rules/common/orchestrator.md",
-      "sha256": "b0ae541ff3cdcf27bf403f235eecd408107ddf2a861048e4afe65c6bb9051a85"
+      "sha256": "a8e1e7af7a2f41ea803aa0c04fb3d5849582bc09916b160e79e2cf105d2fff56"
     },
     {
       "path": ".claude/rules/common/rule-loading-policy.md",
@@ -220,7 +228,7 @@
     },
     {
       "path": ".claude/skills/ui-preview/SKILL.md",
-      "sha256": "50037b3136c2b5c7c3cc25ae4731617e5039b9782408a83832faf41179830b7b"
+      "sha256": "75a34562744005c877e78104ad57a97804b28e257ce5ec21ef1e2b351fd7f9eb"
     },
     {
       "path": ".claude/skills/update-claude/SKILL.md",
